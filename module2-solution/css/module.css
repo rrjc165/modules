@@ -1,0 +1,245 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+}
+
+.row {
+	width: 100%	
+}
+
+
+#chicken {            
+	width: 30%;
+	height: 210px;
+	border: 1px solid black;
+	background-color: #7c7674;
+}
+
+#chicken_relative { 
+	position: relative;
+	margin: 30px 5px 5px 0px;
+	width: 100%;
+	height: 190px;
+	font-size: 13px;
+	font-family: Verdana;
+}
+
+#chicken_absolute {   
+	position: absolute;
+	float: right;
+	outline-offset: 5px;
+	border: 1px solid black;
+	background-color: #b812d9;
+	top: -55px;
+	left: 355px;
+	width: 30%;
+	height: 35px;
+	font-size: 22px;
+	text-align: center;
+}
+
+#beef {        
+	position: relative;
+	width: 30%;
+	height: 210px;
+	border: 1px solid black;
+	background-color: #7c7674;
+}
+
+#beef_relative {  
+	position: relative;
+	margin: 30px 5px 5px 0px;
+	width: 100%;
+	height: 190px;
+	font-size: 13px;
+	font-family: Verdana;
+}
+
+#beef_absolute {      
+	position: absolute;
+	float: right;
+	outline-offset: 5px;
+	border: 1px solid black;
+	background-color: #12d9d3;
+	top: -55px;
+	left: 355px;
+	width: 30%;
+	height: 35px;
+	font-size: 22px;
+	text-align: center;
+}
+
+
+#sushi {
+	position: relative;
+	width: 30%;
+	height: 210px;
+	border: 1px solid black;
+	background-color: #7c7674;
+}
+
+#sushi_relative {       
+	position: relative;
+	margin: 30px 5px 5px 0px;
+	width: 100%;
+	height: 190px;
+	font-size: 13px;
+	font-family: Verdana;
+}
+
+#sushi_absolute {       
+	position: absolute;
+	float: right;
+	outline-offset: 5px;
+	border: 1px solid black;
+	background-color: #d9c412;
+	top: -55px;
+	left: 355px;
+	width: 30%;
+	height: 35px;
+	font-size: 22px;
+	text-align: center;
+}
+
+
+@media (min-width: 992px){
+	#chicken, #chicken_absolute, #beef, #beef_absolute, #sushi, #sushi_absolute {
+		float: left;
+		padding: 2px;
+		margin-left: 0px;
+		margin-right: 3px;
+
+	}
+	#chicken {
+		width: 33%;
+	}
+
+	#chicken_absolute {
+		width: 30%;
+		right: 0;
+		left: auto;
+	}
+
+	#beef
+	{
+		width: 33%;
+	}
+
+	#beef_absolute {
+		width: 30%;
+		right: 0;
+		left: auto;
+	}
+
+	#sushi{
+		width: 33%;
+	}
+
+	#sushi_absolute {
+		width: 30%;
+		right: 0;
+		left: auto;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	#chicken, #chicken_absolute, #beef, #beef_absolute, #sushi {
+		float: left;
+		padding: 5px;
+
+	}
+	#chicken {
+		width: 49%;
+		overflow: hidden;
+	}
+
+	#chicken_absolute {
+		width: 40%;
+		right: 0;
+		left: auto;
+	}
+
+	#chicken_relative{
+		font-size: 100%;
+	}
+
+	#beef
+	{
+		width: 49%;
+	    margin-left: 15px;
+	    overflow: hidden;
+	}
+
+	#beef_absolute {
+		width: 40%;
+		right: 0;
+		left: auto;
+	}
+
+	#beef_relative{
+		font-size: 100%;
+	}
+
+	#sushi{
+		margin-top: 10px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	#sushi_absolute {
+		width: 40%;
+		right: 0;
+		left: auto;
+	}
+
+	#sushi_relative{
+		font-size: 100%;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 767px){
+	#chicken, #chicken_absolute, #beef, #beef_absolute, #sushi, #sushi_absolute,{
+		float: left;
+		padding: 5px;
+		margin-right: 1px;
+
+	}
+	#chicken {
+		width: 100%;
+	}
+
+	#chicken_absolute {
+		width: 30%;
+		right: 0;
+		left: auto;
+
+	}
+
+	#beef
+	{
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	#beef_absolute {
+		width: 30%;
+		right: 0;
+		left: auto;
+
+	}
+
+	#sushi{
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	#sushi_absolute {
+		width: 30%;
+		right: 0;
+		left: auto;
+
+	}
+}
